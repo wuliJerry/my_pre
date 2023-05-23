@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+		<style>
+			.column {
+			  	float: left;
+			  	width: 33.33%;
+			}
+
+			/*	 Clear floats after the columns */
+			.row:after {
+			  	content: "";
+			  	display: table;
+			  	clear: both;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-iframe="https://wuliJerry.github.io" data-background-interactive>
+					<div style="position: absolute; width: 45%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
+						<h2 style="font-weight: bold">Summary of My Relevant Experience</h2>
+						<p style="margin-top: 30px; font-size: 25px">Highlighting My Skills, Accomplishments, and Passion for Research</p>
+					</div>
+				</section>
+				<section>
+					<section>
+						<h2 style="font-size: 65px;margin-bottom: 40px">
+							Relevant Courses
+						</h2>
+						<style>
+							.course-item {
+								margin-left: 30px;
+							}
+						</style>
+						<ul style="line-height: 1.5;">
+							<li>Introductory Programming <span class="course-item">(C/C++ programming)</span></li>
+							<li>Introduction to Computer Systems <span class="course-item">(CMU 15-213)</span></li>
+							<li>Algorithm <span class="course-item">(On Coursera, based on Java)</span></li>
+							<li>Introduncion Machine Learning <span class="course-item">(CMU 10-301)</span></li>
+							<li>Computer Architecture and Engineering <span class="course-item">(Berkeley CS 152/252A)</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>Skills</h3>
+						<div class="row">
+							<div class="column">
+								<h4>Programming</h4>
+								<ul style="line-height: 1.4; font-size: 32px;">
+									<li>C/C++</li>
+									<li>Python</li>
+									<li>Verilog</li>
+									<li>Java, Scala</li>
+									<li>CHISEL</li>
+									<li>Rust</li>
+									<li>CUDA</li>
+								</ul>
+							</div>
+							<div class="column">
+								<h4>Tools</h4>
+								<ul style="line-height: 1.4; font-size: 32px;">
+									<li>GNU/Linux</li>
+									<li>CLI Tools</li>
+									<li>Git</li>
+									<li>PyTorch</li>
+								</ul>
+							</div>
+							<div class="column">
+								<h4>Language</h4>
+								<ul style="line-height: 1.4; font-size: 32px; font-weight: bold;">
+									<li>English: <span style="font-weight: normal;">Fluently</span></li>
+									<li>Chinese: <span style="font-weight: normal;">Native</span></li>
+								</ul>
+
+							</div>
+						</div>
+						
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2 class="r-fit-text" style="font-weight: bolder"> Project/Research Experience</h2>
+					</section>
+
+					<section>
+						<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px;">
+							<div style="text-align: left; font-size: 25px;">
+								<p style="font-weight: 900;">
+									Start from this ASPLOS'21 paper:
+								</p>
+								<a href="https://arxiv.org/abs/2101.09808" style="font-style: italic;">Analytical Characterization and Design Space Exploration for Optimization of CNNs</a>
+								<p>Bottle-neck focused on: Moving data through the memory hierarchy</p>
+								<p style="font-size: 23px;">The total volume of data movement between <b>cache</b> and <b>main memory</b> satisfies:</p>
+								<p style="font-size: 20px;">
+									\( DV_{it, jt, kt} = N_i N_j N_k (\frac{1}{T_i}+\frac{1}{T_j}+\frac{2}{N_k})\) (1)
+								</p>
+								<p style="font-size: 20px;">
+									\( T_i T_j + T_i T_k + T_j T_k \le C \) (2)
+								</p>
+								<p>Compared with oneDNN and TVM:</p>
+								<p>Speed up <b>1.26x</b> over oneDNN, <b>1.53x</b> over TVM</p>
+								<p style="font-size: 20px;">(Using Yolo as testbench, on intel i9-10980XE)</p>
+
+							</div>
+							<div>								
+								<img src="img/tile.png" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
+								<img src="img/plot.png" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
+							</div>
+						</div>
+					</section>
+					<section>
+						<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px;">
+							<div>
+								<img src="img/flashattn_banner.jpg" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
+							</div>
+							<div style="text-align: left; font-size: 25px;">
+								<p>What we are trying to do:</p>
+								<ul style="font-size: 23px;">
+									<li>
+										Mostly focus on GPU arch and Transformer, instead of CPU and CNN
+									</li>
+									<li>
+										Figure out whether the function (1) and (2) also works on GPU (suppose to be)
+									</li>
+									<li>
+										Further develop the function (1) based on the experiment result
+									</li>
+									<li>
+										Implement the analytical result - best matrix tiled size - into the <i>FlashAttention</i>.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h2 class="r-fit-text" style="font-weight: bolder"> Hardware-related Experience</h2>
+					</section>
+
+					<section>
+						<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px;" >
+							<div style="text-align: left;">
+								<p style="font-weight: bold; font-size: 30px; margin-top: 30px;">
+									Research Intern
+									<span style="font-size: 30px; font-weight: 400;">
+										remote
+									</span>
+								</p>								
+
+								<p style="font-size: 20px;">
+									Instructed by and colleborated with Dr. Yu Zeng 
+								</p>
+
+								
+								<p style="font-style: italic; font-size: 20px;">
+									October, 2022 - March, 2023
+								</p>
+
+								<p style="font-size: 20px; margin-top: 30px;">
+									Working on hardware design simulation accelaration;
+								</p>
+
+								<p  style="font-size: 20px;">
+									Using the idea of compiler optimization;
+								</p>
+
+								<p  style="font-size: 20px;">
+									Saving time, and resource comsumption on FPGA;
+								</p>
+							
+								<p  style="font-size: 20px;">
+									Has been estimated on multiple harware designs,
+								</p>
+
+								<p  style="font-size: 20px;">
+									Including deep learning accelerator, CPU core, and hardware floating-point units
+								</p>
+
+								<p  style="font-size: 20px;">
+									Preparing to publish on <span style="font-weight: bold;">ICCAD</span>
+								</p>
+							</div>
+							<div >
+								<img src="img/Figure_1.png" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
+								<p style="line-height: 1; font-size: 15px; margin-top: 0;">Figure 1. Comparison of Time Consumption During Simulation of Original and Optimized Design (TVM-VTA and Berkeley-Hardfloat)</p>
+								<img style="margin-top: 0; margin-bottom: 0;"src="img/Figure_2.png" style="box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
+								<p style="line-height: 1; font-size: 15px; margin-top: 0;">Figure 2. Comparison of FPGA Resource Usage for Original and Optimized Design of TVM-VTA(Based on DE10-Nano Kit)</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div style="display: grid; grid-template-columns: 1fr 1fr;">
+							<div style="display: flexbox; flex-direction: column; width: 90%;">
+								<img src="img/RISC-V-logo.png">
+								<img src="img/CHISEL.png">
+							</div>
+							<div style="text-align: right;">
+								<p style="font-weight: bold; font-size: 30px; margin-top: 50px;">
+									Hardware Engineer
+									<span style="font-size: 30px; font-weight: 400;">
+										Remote
+									</span>
+								</p>								
+								<p style="font-size: 20px; font-weight: 400;">
+									"One Core for Life" Project
+								</p>
+								<p style="font-style: italic; font-size: 20px;">
+									Auguest, 2022 - Nov, 2022
+								</p>
+								<p style="font-size: 20px">
+									Implemented a five-stage pipeline CPU core from scratch
+								</p>
+								
+								<p style="font-size: 20px" >
+									Based on RISC-V 64IM ISA, <span >Using <span style="font-weight: bold">CHISEL</span>;
+								</p>
+
+								<p style="font-size: 20px" >
+									Implemented its GEM5-like simulation framework with C++, based on Verilator.
+								</p>
+
+								<p style="font-size: 20px" >
+									Passed the <u>riscv-tests</u>
+								</p>
+							</div>
+
+						</div>
+					</section>
+
+					<section>
+						<div style="display: grid; grid-template-columns: 1fr 1fr" >
+							<div>
+								<img src="img/photo_2023-02-03_20-16-09.jpg" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
+								<p style="line-height: 1.1; font-size: 15px; margin-top: 0;">Figure 3. The Transistor with van der Waals heterostructures</p>
+							</div>
+							<div style="text-align: left; margin-left: 40pt;">
+								<p style="font-weight: bold; font-size: 30px; margin-top: 30px;">
+									Research Intern
+									<span style="font-size: 30px; font-weight: 400;">
+										IFFS, UESTC
+									</span>
+								</p>								
+								
+								<p style="font-style: italic; font-size: 20px;">
+									March, 2022 - June, 2022
+								</p>
+
+								<p style="font-size: 20px; margin-top: 30px;">
+									Built a transistor using 2D material;
+								</p>
+
+								<p  style="font-size: 20px;">
+									Measured its electronic properties when bending;
+								</p>
+
+								<p  style="font-size: 20px;">
+									Read papers in this area;
+								</p>
+							
+								<p  style="font-size: 20px;">
+									Started to figuring out how scientific research works.
+								</p>
+							</div>
+						</div>
+					</section>
+
+				</section>
+				<section>
+					<h2>
+						Thanks for your attention!
+					</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
