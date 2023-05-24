@@ -74,11 +74,14 @@ r_squared_1_to_10 = np.corrcoef(x, y_1_to_10)[0, 1]**2
 # Generate x values for plotting the fit
 x_fit = np.linspace(x.min(), x.max(), 500)
 
-plt.scatter(x, y_all_zero, label='All zero')
-plt.plot(x_fit, f_all_zero(x_fit), 'r-', label=f'Fit: All zero, R^2: {r_squared_all_zero:.3f}')
+plt.scatter(x, y_all_zero,  label='Data 2')
+plt.plot(x_fit, f_all_zero(x_fit), '-', c=(0.2314, 0.4588, 0.6863, 0.3), label=f'Fit: Data 1, R^2: {r_squared_all_zero:.3f}')
 
-plt.scatter(x, y_1_to_10, label='1 to 10')
-plt.plot(x_fit, f_1_to_10(x_fit), 'g-', label=f'Fit: 1 to 10, R^2: {r_squared_1_to_10:.3f}')
+plt.scatter(x, y_1_to_10, label='Data 2')
+plt.plot(x_fit, f_1_to_10(x_fit), '-', c=(0.9333, 0.5216, 0.2118, 0.3), label=f'Fit: Data 2, R^2: {r_squared_1_to_10:.3f}')
+
+plt.xlabel(r"$1 / T_i + 1 / T_j$")
+plt.ylabel("L2 Data Volumes/GBytes")
 
 plt.legend()
 plt.show()
