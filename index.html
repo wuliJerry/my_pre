@@ -34,7 +34,7 @@
 			<div class="slides">
 				<section data-background-iframe="https://wuliJerry.github.io" data-background-interactive>
 					<div style="position: absolute; width: 45%; right: 0; box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.5); color: #fff; padding: 20px; font-size: 20px; text-align: left;">
-						<h2 style="font-weight: bold">Summary of My Relevant Experience</h2>
+						<h2 style="font-weight: bold; color: antiquewhite;">Summary of My Relevant Experience</h2>
 						<p style="margin-top: 30px; font-size: 25px">Highlighting My Skills, Accomplishments, and Passion for Research</p>
 					</div>
 				</section>
@@ -116,7 +116,7 @@
 						<h2 class="r-fit-text" style="font-weight: bolder"> Project/Research Experience</h2>
 					</section>
 
-					<section>
+					<section id="fragment">
 						<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px;">
 							<div style="text-align: left; font-size: 25px;">
 								<p style="font-weight: 900;">
@@ -138,31 +138,31 @@
 							</div>
 							<div>								
 								<img src="img/tile.png" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
-								<img src="img/plot.png" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
+								<img class="fragment" src="img/plot.png" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
 							</div>
 						</div>
 					</section>
-					<section>
+					<section id="fragment">
 						<div style="display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px;">
 							<div>
 								<img src="img/flashattn_banner.jpg" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
 							</div>
 							<div style="text-align: left; font-size: 25px;">
 								<p>What we are trying to do:</p>
-								<ul style="font-size: 23px;">
+								<ul style="font-size: 23px; line-height: 1.6;">
 									<li>
 										Mostly focus on GPU arch and Transformer, instead of CPU and CNN
 									</li>
-									<li>
+									<li class="fragment">
 										Figure out whether the function (1) also works on GPU (suppose to be)
 									</li>
-									<li>
+									<li class="fragment">
 										Improve the function (2) to make it a more accrate constraint function
 									</li>
-									<li>
+									<li class="fragment">
 										Further develop the function (1) based on the experiment result
 									</li>
-									<li>
+									<li class="fragment">
 										Implement the analytical result - best matrix tiled size - into the <i>FlashAttention</i>.
 									</li>
 								</ul>
@@ -183,9 +183,6 @@
 							<div style="text-align: left;">
 								<p style="font-weight: bold; font-size: 30px; margin-top: 30px;">
 									Research Intern
-									<span style="font-size: 30px; font-weight: 400;">
-										remote
-									</span>
 								</p>								
 
 								<p style="font-size: 20px;">
@@ -210,16 +207,16 @@
 								</p>
 							
 								<p  style="font-size: 20px;">
-									Been verified on multiple harware designs,
+									Have been verified on multiple harware designs,
 								</p>
 
 								<p  style="font-size: 20px;">
 									Including deep learning accelerator, CPU core, and hardware floating-point units
 								</p>
 
-								<p  style="font-size: 20px;">
+								<!-- <p  style="font-size: 20px;">
 									Preparing to publish on <span style="font-weight: bold;">ICCAD</span>
-								</p>
+								</p> -->
 							</div>
 							<div >
 								<img src="img/Figure_1.png" style="margin-bottom: 0;box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 5px 25px rgba(0,0,0,0.2)">
@@ -239,9 +236,6 @@
 							<div style="text-align: right;">
 								<p style="font-weight: bold; font-size: 30px; margin-top: 50px;">
 									Hardware Engineer
-									<span style="font-size: 30px; font-weight: 400;">
-										Remote
-									</span>
 								</p>								
 								<p style="font-size: 20px; font-weight: 400;">
 									"One Core for Life" Project
